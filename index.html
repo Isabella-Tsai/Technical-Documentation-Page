@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Small Technical Documentation of Python </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav id="navbar">
+		<header>
+			<h1>Python Documentation</h1>
+		</header>
+		<ul>
+			<li><a href="#Introduction" class="nav-link"> Introduction </a></li>
+			<li><a href="#Start_Learning" class="nav-link"> Start Learning </a></li>
+			<li><a href="#Python_Comment" class="nav-link"> Python Comment</a></li>
+			<li><a href="#First_Program" class="nav-link"> First Program</a></li>
+			<li><a href="#Variable" class="nav-link"> Variable</a></li>
+			<li><a href="#If_else" class="nav-link"> If else </a></li>
+			<li><a href="#Reference" class="nav-link"> Reference</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-doc">
+        <!-- 2. main section 1-->
+		<section class="main-section" id="Introduction">
+			<header> <h2>Introduction </h2></header>
+			<p>Python is a general purpose and high-level programming language. You can use Python for developing desktop GUI applications, websites and web applications. Also, Python, as a high-level programming language, allows you to focus on core functionality of the application by taking care of common programming tasks.</p>
+		</section>
+        <!-- 2. main section 2-->
+		<section class="main-section" id="Start_Learning">
+			<header> <h2>Start Learning</h2> </header>
+			<p>
+				<ol>
+					<li>Installing python, go to <a href="https://www.python.org/downloads/"> python</a> and download the latest version of python. Install the python, for windows users there will be check box option &#34 Add python to PATH &#34, tick the box.
+					</li>
+					<li>After that download and install code editor for python. There are many code editors for python, one of the most popular is PyCharm. To get PyCharm, go to <a href="https://www.jetbrains.com/pycharm/">	jetbrains </a>. Download and install the community version which is free. 
+					</li>
+				</ol>
+			</p>
+		</section>
+        <!-- 2. main section 3-->
+		<section class="main-section" id="Python_Comment">
+			<header><h2>Python Comment</h2> </header>
+			<p>Comment can be used to explain Python code and make the code readable. It also can be used to prevent execution when testing code. Comment start with “#”. <br> Example:</p>
+			<code># this is a comment <br> print (&#34Hello World&#34) </code>
+			<p> It will ignore the sentence after &#34 # &#34 and print Hello World</p>
+		</section>
+        <!-- 2. main section 4-->
+		<section class="main-section" id="First_Program">
+			<header> <h2>First Program</h2> </header>
+			<p>In the PyCharm editor, type</p>
+			<code>print(&#34Hello world&#34)</code>
+			<p>run the program and it will show Hello World.</p>
+		</section>
+        <!-- 2. main section 5-->
+		<section class="main-section" id="Variable">
+			<header> <h2>Variable</h2> </header>
+			<p>Variables are containers for storing data values. Python has no command for declaring variables and the variables can even change the type after they have been set.</p>
+			<code>x=5 &nbsp &nbsp &nbsp &nbsp # X is of type integer <br>
+			x=&#34John&#34 &nbsp &nbsp &nbsp # X is now of type string <br>
+			print(x)</code>
+			<p>It will print &#34John&#34</p>
+			<p>In the other hand, the data type of variable can be specified by casting the variable. </p>
+			<code>x= int(5) <br> y=float(5.5) </code>
+		</section>
+        <!-- 2. main section 6-->
+		<section class="main-section" id="If_else">
+			<header> <h2> If  else </h2></header>
+			<p> Python supports the usual logical conditions from mathematics:
+				<ul>
+					<li>Equals: <code>a==b</code></li>
+					<li>Not Equals: <code>a != b </code></li>
+					<li>Less than: <code>a &lt b </code></li>
+					<li>Less than or equal to: <code>a &lt= b</code> </li>
+					<li>Greater than: <code>a &gt b</code></li>
+					<li>Greater than or equal to: <code>a &gt= b</code></li>
+				</ul>
+			</p>
+			<p>These conditions can be used in several ways, most commonly in &#34if statements&#34 and loops.</p>
+			<p>An &#34if statement&#34 is written by using the <code>if</code> keyword.<br> Example: <br></p>
+			<code>a = 33 <br> b = 200 <br> if b&gta: <br> &nbsp &nbsp &nbsp print (&#34b is greater than a&#34)</code>
+			<p>In this example we use two variables, <code>a</code> and <code>b</code>, which are used as part of the if statement to test whether <code>b</code> is greater than <code>a</code>. As <code>a</code> is <code>33</code>, and <code>b</code> is <code>200</code>, we know that 200 is greater than 33, and so we print to screen that &#34b is greater than a&#34.</p>
+
+			<p><h3>Elif</h3></p>
+			<p>The <code>elif</code> is the short words for &#34else if&#34. It is pythons way of saying &#34if the previous conditions were not true, then try this condition&#34.<br>Example: <br></p>
+			<code>a = 33 <br> b = 33 <br> if b &gt a: <br> &nbsp &nbsp &nbsp print(&#34b is greater than a&#34) <br> elif a == b: <br> &nbsp &nbsp &nbsp print(&#34a and b are equal&#34) </code>
+			<p>In this example <code>a</code> is equal to <code>b</code>, so the first condition is not true, but the <code>elif</code> condition is true, so we print to screen that &#34a and b are equal&#34.</p>
+
+			<p><h3>Else</h3></p>
+			<p>The <code>else</code> keyword catches anything which isn't caught by the preceding conditions. <br> Example: <br></p>
+			<code>a = 200 <br> b = 33 <br> if b &gt a: <br> &nbsp &nbsp &nbsp print(&#34b is greater than a&#34) <br> elif a == b: <br> &nbsp &nbsp &nbsp print(&#34a and b are equal&#34) <br> else: <br> &nbsp &nbsp &nbsp print(&#34a is greater than b&#34) </code>
+			<p>In this example <code>a</code> is greater than <code>b</code>, so the first condition is not true, also the <code>elif</code> condition is not true, so we go to the <code>else</code> condition and print to screen that &#34a is greater than b&#34.</p>
+		</section>
+        <!-- 2. main section 7-->
+		<section class="main-section" id="Reference">
+			<header><h2>Reference</h2> </header>
+			<p>All the documentation in this page is taken from:
+				<ul>
+					<li><a href="https://www.w3schools.com/python/default.asp">w3schools.com</a> </li>
+					<li> <a href="https://docs.python.org/3/tutorial/index.html">python.org</a></li>
+				</ul>
+			</p>
+		</section>
+
+	</main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
